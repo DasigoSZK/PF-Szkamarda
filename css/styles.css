@@ -238,6 +238,8 @@ justify-content: center;
   transform: scale(0.7);
 }
 
+
+
 /* ********** Footer ********** */
 footer{
   background-image: url(../assets/hero-background-desktop.jpg);
@@ -646,6 +648,10 @@ color: var(--text-color-black)
 #grecia, #marina{
   scroll-margin: 0;
 }
+.logo-img:hover > img{
+  transform: scale(1.0);
+  border: 0;
+}
 
 
 /* ******** mobile-menu ******** */
@@ -653,11 +659,14 @@ color: var(--text-color-black)
   display: none;
  } 
 
+
+
  header{
   position:fixed;
   top: auto;
-  bottom:0;
+  bottom:0px;
   left:0;
+  overflow: hidden;
  }
 
  .mobile-list{
