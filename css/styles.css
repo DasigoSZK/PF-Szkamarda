@@ -653,7 +653,10 @@ color: var(--text-color-black)
   border: 0;
 }
 
-
+.logo-img:active > img{
+  transform: scale(0.8);
+  border: 2px solid white;
+}
 /* ******** mobile-menu ******** */
  .nav-menu__logo{
   display: none;
