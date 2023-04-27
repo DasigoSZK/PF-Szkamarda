@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <meta name="description"
+    content="Hola, bienvenidos a Salón de Belleza M&G. Somos un salón de estética donde realizamos manicuría, pedicura, peluquería, planchado de cejas y pestañas, y mucho mas." />
+  <link rel="shortcut icon" href="./assets/salon-logo.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="./assets/salon-logo.png" />
+  <title>Salón de Belleza M&G</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-menu">
+      <div class="nav-menu-mobile">
+        <a href="index.html"><img src="./assets/home-icon.svg" alt="HOME"></a>
+        <div class="mobile-button">
+          <input class="menu-checkbox" type="checkbox" id="menu-checkbox">
+          <label for="menu-checkbox" class="toggle">
+            <img class="open" src="./assets/burger-button.svg" alt="abrir menu">
+            <img class="close" src="./assets/close-button.svg" alt="cerrar menu">
+          </label>
+          <ul class="mobile-list">
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="clientes.html">CLIENTES</a></li>
+            <li><a href="sobrenosotras.html">SOBRE NOSOTRAS</a></li>
+            <li><a href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-menu nav-menu__logo">
+        <a href="index.html"><img src="./assets/salon-logo.png" alt="logo home"></a>
+        <a class="home-desk" href="index.html">HOME</a>
+      </div>
+      <ul class="nav-menu nav-menu__ul">
+        <li><a class="active" href="servicios.html">SERVICIOS</a></li>
+        <li><a href="clientes.html">CLIENTES</a></li>
+        <li><a href="sobrenosotras.html">SOBRE NOSOTRAS</a></li>
+        <li><a href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="inicio" class="pb-5 services">
+    <article class="container-services">
+      <div class="d-flex justify-content-center w-80">
+        <h2 class="title">Manicura</h2>
+      </div>
+      <div class="pb-5 row services-box">
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Manicura y Colores</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img class="" src="./assets/manicura/manicura-colores.jpeg"
+                alt="foto de esmaltes"></div>
+            <div id="precios-1" class="services-price-card">
+              <p>Colores Lisos <br>
+                $1500<br>
+                Francesitas Blancas Clasicas<br>
+                $1600<br>
+                Decoraciones (Complejidad 1)<br>
+                $1700<br>
+                Decoraciones (Complejidad 2)<br>
+                $1800<br>
+                Decoraciones (Complejidad 3)<br>
+                $1900<br>
+                +<br>
+                Extras:<br>
+                Glitter/Piedras/Strass<br>
+                Brillos Sueltos/Polvos<br>
+                $100</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Esculpidas y Esmaltes</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/manicura/esculpidas.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-2" class="services-price-card">
+              <p>Largo 1 $2.600<br><br>
+                Largo 2 $2.700<br><br>
+                Largo 3 $2.800<br><br>
+                Largo 4 $2.900<br><br>
+                Largo 5 $3.000<br><br>
+                Largo 6 $3.100<br><br>
+                Largo 7 $3.200</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center col-12 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Kapping</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/manicura/kapping.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-3" class="services-price-card">
+              <p>Kapping Solito <br>$1.500<br>
+                Retoque de Kapping <br>$1.300<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 d-flex justify-content-center w-80">
+        <h2 class="title">Pedicura</h2>
+      </div>
+      <div class="pb-5 row gy-4 services-box">
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <h3 class="services-subtitle">Esmaltes Semipermanentes</h3>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/pedicura/pedicura-esmaltes.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-4" class="services-price-card">
+              <p>Colores Lisos <br>
+                $1500<br>
+                Francesitas Blancas Clasicas<br>
+                $1600<br>
+                Decoraciones (Complejidad 1)<br>
+                $1700<br>
+                Decoraciones (Complejidad 2)<br>
+                $1800<br>
+                Decoraciones (Complejidad 3)<br>
+                $1900<br>
+                +<br>
+                Extras:<br>
+                Glitter/Piedras/Strass<br>
+                Brillos Sueltos/Polvos<br>
+                $100</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <h3 class="services-subtitle">Esculpidas + Esmaltes</h3>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/pedicura/pedicura-esculpidas.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-5" class="services-price-card">
+              <p>Colores Lisos<br>
+                $2400<br>
+                Francesitas Blancas Clasicas<br>
+                $2500<br>
+                Decoraciones (Complejidad 1)<br>
+                $2600<br>
+                Decoraciones (Complejidad 2)<br>
+                $2700<br>
+                Decoraciones (Complejidad 3)<br>
+                $2800<br>
+                +<br>
+                Extras:<br>
+                Glitter/Piedras/Strass<br>
+                Brillos Sueltos/Polvos<br>
+                $100</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-xxl-4">
+          <h3 class="services-subtitle">Reconstrucción de Uñas con Esmaltes semipermanente</h3>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/pedicura/pedicura-reconstruccion.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-6" class="services-price-card">
+              <p>Colores Lisos<br>
+                $1800<br>
+                Francesitas Blancas Clasicas<br>
+                $1900<br>
+                Decoraciones (Complejidad 1)<br>
+                $2000<br>
+                Decoraciones (Complejidad 2)<br>
+                $2100<br>
+                Decoraciones (Complejidad 3)<br>
+                $2200<br>
+                +<br>
+                Extras:<br>
+                Glitter/Piedras/Strass<br>
+                Brillos Sueltos/Polvos<br>
+                $100
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 d-flex justify-content-center w-80">
+        <h2 class="title">Peluquería</h2>
+      </div>
+      <div class="pb-5 row services-box">
+        <div class=" d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Color y Corte</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/peluqueria/peluqueria-color-corte.webp"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-7" class="services-price-card">
+              <p>Color<br>
+                $3500-$5500<br><br>
+                Corte<br>
+                $1000<br>
+            </div>
+          </div>
+        </div>
+        <div class=" d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Balayage</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/peluqueria/peluqueria-balayage.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-8" class="services-price-card">
+              <p>Largo S $5.000<br>
+                Largo M $5.500<br>
+                Largo L $6.000<br>
+                Largo XL $6.500<br></p>
+            </div>
+          </div>
+        </div>
+        <div class=" d-flex flex-column justify-content-center align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Iluminación</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/peluqueria/peluqueria-iluminacion.webp"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-9" class="services-price-card">
+              <p>Largo S $3.500<br>
+                Largo M $4.5000<br>
+                Largo L $4.500<br>
+                Largo XL $5.000<br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Nutrición y Tratamiento</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/peluqueria/peluqueria-nutricion.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-10" class="services-price-card">
+              <p>Largo S $2.500<br>
+                Largo M $3.000<br>
+                Largo L $3.500<br>
+                Largo XL $4.000<br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Nanoplastia</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/peluqueria/peluqueria-nanoplastia.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-11" class="services-price-card">
+              <p>Largo S $4.500<br>
+                Largo M $5.000<br>
+                Largo L $5.500<br>
+                Largo XL $6.000<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 d-flex justify-content-center w-80">
+        <h2 class="title">FullLips</h2>
+      </div>
+      <div class="pb-5 row services-box">
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Micropigmentación de Labios</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/fulllips/micropigmentacion.webp"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-12" class="services-price-card">
+              <p>Sesión Inicial<br>
+                $25.000<br><br>
+                Sesión de Retoque<br>
+                $15.000<br></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 d-flex justify-content-center w-80">
+        <h2 class="title">Cejas y Pestañas</h2>
+      </div>
+      <div class="pb-5 row services-box">
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div lass="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Microblanding</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/cejas-y-pestañas/cejas-microblanding.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-13" class="services-price-card">
+              <p>Sesión Inicial<br>
+                $25.000<br><br>
+                Sesión de Retoque<br>
+                $15.000<br>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Planchado de Cejas</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/cejas-y-pestañas/cejas-planchado.jpeg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-14" class="services-price-card">
+              <p>Planchado de Cejas <br>
+                $2.200</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Perfilado de Cejas</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/cejas-y-pestañas/cejas-perfilado.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-15" class="services-price-card">
+              <p>Perfilado de Cejas <br>
+                $1.300
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Tinte de Pestañas</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/cejas-y-pestañas/cejas-tinte-pestañas.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-16" class="services-price-card">
+              <p>Tinte de Pestañas <br>
+                $2.000
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Tinte de Cejas</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/cejas-y-pestañas/cejas-tinte.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-17" class="services-price-card">
+              <p>Tinte de Cejas <br>
+                $2.000
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center    align-items-center col-12 col-lg-6 col-xxl-4">
+          <div class="subtitle-container d-flex justify-content-center align-items-center">
+            <h3 class="services-subtitle">Lifting de Pestañas</h3>
+          </div>
+          <div class="services-price">
+            <div tabindex="0" class="services-price-img"><img src="./assets/cejas-y-pestañas/cejas-lifting-pestañas.jpg"
+                alt="foto de uñas esculpidas rosas">
+            </div>
+            <div id="precios-18" class="services-price-card">
+              <p>Lifting de Pestañas <br>
+                $2.600
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <footer class="row">
+    <article class="text-start col-12 col-xl-6">
+      <h3 class="mt-5 mb-3">CONTÁCTANOS:</h3>
+      <a href="tel:+543644273506">
+        <P><i class="bi bi-telephone fs-4 mx-1"></i>Manicuras: 3644-273506</P>
+      </a>
+      <a href="tel:+543644330830">
+        <P><i class="bi bi-telephone fs-4 mx-1"></i>Manicuras: 3644-330830</P>
+      </a>
+      <a target="_blank"
+        href="https://www.google.com/maps/place/26%C2%B048'14.0%22S+60%C2%B024'57.7%22W/@-26.8038981,-60.4182115,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-26.8038981!4d-60.4160228?hl=es">
+        <p><i class="bi bi-geo-alt fs-4 mx-1"></i>Av 301. (Papa Francisco) entre Paraísos y
+          Guayacanes</p>
+      </a>
+      <h3 class="mt-5 mb-3">MEDIO DE PAGO</h3>
+      <p><i class="bi bi-cash fs-4 mx-1"></i>Efectivo</p>
+      <p><i class="bi bi-credit-card fs-4 mx-1"></i>Tarjetas de crédito/débito</p>
+      <p><i class="bi bi-wallet2 fs-4 mx-1"></i>MercadoPago</p>
+      <p><i class="bi bi-bank fs-4 mx-1"></i>Transferencia Bancaria</p>
+    </article>
+    <article class="text-start col-12 col-xl-6">
+      <h3 class="mt-5">REDES</h3>
+      <a target="_blank" href="https://www.facebook.com/nails.greecee"><img src="./assets/fb-icon-white.png"
+          alt="link a  página de facebook"></a>
+      <a target="_blank"
+        href="https://api.whatsapp.com/send/?phone=5493644273506&text&type=phone_number&app_absent=0"><img
+          src="./assets/wpp-icon-white.png" alt="link a whatsapp del salón de belleza"></a>
+      <a target="_blank" href="https://www.instagram.com/salon.de.belleza.mg/"><img src="./assets/ig-icon-white.png"
+          alt="link a página de instagram"></a>
+    </article>
+    <a class="text-end mb-5" href="#inicio"><img src="./assets/up-button.png" alt="botón para volver al inicio"></a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
