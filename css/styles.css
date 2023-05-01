@@ -169,7 +169,7 @@ color:#065000
   background-attachment: fixed;
 }
 
-.bg-opacity{
+.bg-opacity-index{
   background-color: rgba(0, 0, 0, 0.25);
   width: 100%;
   height: 100vh;
@@ -180,6 +180,13 @@ color:#065000
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.bg-opacity{
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 30vh;
 }
 .bg-opacity article{
   height: inherit;
@@ -200,6 +207,7 @@ color:#065000
 .hero-content img{
 width: 20rem;
 border-radius: 50%;
+
 }
 
 .hero-content__logos{
@@ -238,7 +246,9 @@ justify-content: center;
   transform: scale(0.7);
 }
 
-
+.salon-h1{
+  width:100vw;
+}
 
 /* ********** Footer ********** */
 footer{
@@ -645,6 +655,18 @@ color: var(--text-color-black)
 
 /* ******** index ********* */
 
+.hero-image{
+  height:calc(100vh - 4rem)
+}
+
+.section-cards{
+  height: 200vh;
+}
+
+.section-cards > article{
+  margin-bottom: 0;
+}
+
 #grecia, #marina{
   scroll-margin: 0;
 }
@@ -762,11 +784,37 @@ color: var(--text-color-black)
 .title-black{
   text-align: center;
 }
+/* ********* faqs     ********* */
+
+.bg-opacity{
+  height: 100vh;
+}
 
 }
 
-
 @media screen and (max-width: 650px){
+/* ********* header   ********* */
+
+.mobile-list{
+  height: 18rem;
+  bottom: 2.90rem;
+}
+
+/* ********* index    ********* */
+.section-cards{
+  height: 200vh;
+}
+
+.section-cards > article{
+  margin-bottom: 0;
+}
+
+.hero-content__logos img{
+  width: 9rem;
+  max-width: none;
+}
+
+
 /* ********* about us ********* */
 .w-sm-100{
   width:100%;
@@ -775,6 +823,7 @@ color: var(--text-color-black)
 }
 
 /* ********* faqs ********* */
+
 
 .w-smf-100{
   width: 100%;
@@ -786,6 +835,18 @@ color: var(--text-color-black)
   margin: 0 2rem;
 }
 }
+
+
+@media screen and (max-width: 376px){
+  .section-cards{
+    height: 240vh;
+  }
+
+  .section-cards > article{
+  margin-bottom: 7rem;
+}
+}
+
 
 
 @media screen and (max-width:1200px){
