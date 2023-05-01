@@ -200,6 +200,7 @@ color:#065000
 .hero-content img{
 width: 20rem;
 border-radius: 50%;
+
 }
 
 .hero-content__logos{
@@ -238,7 +239,9 @@ justify-content: center;
   transform: scale(0.7);
 }
 
-
+.salon-h1{
+  width:100vw;
+}
 
 /* ********** Footer ********** */
 footer{
@@ -645,6 +648,18 @@ color: var(--text-color-black)
 
 /* ******** index ********* */
 
+.hero-image{
+  height:calc(100vh - 4rem)
+}
+
+.section-cards{
+  height: 200vh;
+}
+
+.section-cards > article{
+  margin-bottom: 0;
+}
+
 #grecia, #marina{
   scroll-margin: 0;
 }
@@ -765,8 +780,22 @@ color: var(--text-color-black)
 
 }
 
-
 @media screen and (max-width: 650px){
+/* ********* index    ********* */
+.section-cards{
+  height: 200vh;
+}
+
+.section-cards > article{
+  margin-bottom: 0;
+}
+
+.hero-content__logos img{
+  width: 9rem;
+  max-width: none;
+}
+
+
 /* ********* about us ********* */
 .w-sm-100{
   width:100%;
@@ -786,6 +815,18 @@ color: var(--text-color-black)
   margin: 0 2rem;
 }
 }
+
+
+@media screen and (max-width: 376px){
+  .section-cards{
+    height: 240vh;
+  }
+
+  .section-cards > article{
+  margin-bottom: 7rem;
+}
+}
+
 
 
 @media screen and (max-width:1200px){
