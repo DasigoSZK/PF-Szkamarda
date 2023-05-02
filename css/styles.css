@@ -636,20 +636,24 @@ color: var(--text-color-black)
 
 /* ********** Bootstrap Modifiers ********** */
 
-.accordion-button{
-  background-color: #b7ffbd
+.accordion-contenido{
+   background-color: #caffc6; 
 }
 
-.accordion-button:not(.collapsed){
-  background-color: #b7ffbd
+#accordion-boton{
+    background-color: #b7ffbd 
 }
-
-.accordion-item{
-  background-color: #caffc6;
-}
-
 
 /* ********** media-query ********** */
+
+
+@media screen and (max-width:1200px){
+  .section-cards{
+    background-image: none;
+    background-color: #334239;
+  }
+}
+
 
 @media screen and (max-width: 850px){
 
@@ -849,9 +853,4 @@ color: var(--text-color-black)
 
 
 
-@media screen and (max-width:1200px){
-  .section-cards{
-    background-image: none;
-    background-color: #334239;
-  }
-}
+
