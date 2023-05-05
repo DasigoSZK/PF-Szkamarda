@@ -392,17 +392,91 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   .hero-image .bg-opacity-index .container .hero-content__logos h2 {
     font-size: 6vw;
   }
-  .hero-image .bg-opacity-index .container .hero-content__logos .marina-logo #marina {
-    scroll-margin: 0;
-  }
-  .hero-image .bg-opacity-index .container .hero-content__logos .grecia-logo #grecia, .hero-image .bg-opacity-index .container .hero-content__logos .marina-logo #grecia {
-    scroll-margin: 0;
-  }
 }
 @media screen and (max-width: 650px) {
   .hero-image .bg-opacity-index .container .hero-content__logos img {
     width: 9rem;
     max-width: none;
+  }
+}
+#inicio {
+  scroll-margin: 13rem;
+}
+#inicio .section-cards {
+  background-image: url(../assets/desktop-banner-ps2.jpg);
+  width: 100%;
+  height: 200vh;
+  background-position: top;
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+#inicio .section-cards h3 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font-size: clamp(1.94rem, 1.77rem + 0.87vw, 2.44rem);
+}
+#inicio .section-cards p {
+  margin-bottom: 0;
+  font-size: clamp(1.62rem, 1.5rem + 0.58vw, 1.95rem);
+}
+#inicio .section-cards #grecia,
+#inicio .section-cards #marina {
+  scroll-margin: 4rem;
+}
+#inicio .section-cards .card-grecia,
+#inicio .section-cards .card-marina {
+  height: 100vh;
+  padding-top: 3rem;
+}
+#inicio .section-cards .card-grecia .large-picture > *,
+#inicio .section-cards .card-marina .large-picture > * {
+  border-radius: 10%;
+  box-shadow: 1px 1px 1px black;
+}
+#inicio .section-cards .card-grecia .cards-subtitles,
+#inicio .section-cards .card-marina .cards-subtitles {
+  min-width: 350px;
+}
+
+@media screen and (min-width: 1200px) {
+  #inicio .section-cards .container-index {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #inicio .section-cards {
+    background-image: none;
+    background-color: #334239;
+  }
+}
+@media screen and (max-width: 1200px) and (max-width: 850px) {
+  #inicio .section-cards {
+    height: 200vh;
+  }
+  #inicio .section-cards #grecia,
+  #inicio .section-cards #marina {
+    scroll-margin: 0;
+  }
+  #inicio .section-cards article {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) and (max-width: 650px) {
+  #inicio .section-cards {
+    height: 200vh;
+  }
+  #inicio .section-cards article {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) and (max-width: 376px) {
+  #inicio .section-cards {
+    height: 240vh;
+  }
+  #inicio .section-cards article {
+    margin-bottom: 7rem;
   }
 }
 
