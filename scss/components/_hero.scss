@@ -96,23 +96,27 @@
   .hero-image {
     height: calc(100vh - 4rem);
 
-    .bg-opacity-index {
-      .container {
-        .hero-content {
-          h1 {
-            font-size: 10vw;
-          }
+    .bg-opacity {
+      height: calc(100vh - 4rem);
 
-          &__logos {
-            h2 {
-              font-size: 6vw;
+      .bg-opacity-index {
+        .container {
+          .hero-content {
+            h1 {
+              font-size: 10vw;
+            }
+
+            &__logos {
+              h2 {
+                font-size: 6vw;
+              }
             }
           }
         }
       }
     }
-  }
 
+  }
 }
 
 @media screen and (max-width: 650px) {

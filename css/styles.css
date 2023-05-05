@@ -76,17 +76,17 @@
 }
 
 .title {
-  font-family: var(--font);
+  font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: var(--step-5);
+  font-size: clamp(2.8rem, 2.45rem + 1.77vw, 3.82rem);
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   max-width: 500px;
 }
 
 .title-black {
-  font-family: var(--font);
-  font-size: var(--step-5);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.8rem, 2.45rem + 1.77vw, 3.82rem);
   border-bottom: 1px solid black;
   padding: 0.5rem 1rem;
 }
@@ -386,10 +386,13 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   .hero-image {
     height: calc(100vh - 4rem);
   }
-  .hero-image .bg-opacity-index .container .hero-content h1 {
+  .hero-image .bg-opacity {
+    height: calc(100vh - 4rem);
+  }
+  .hero-image .bg-opacity .bg-opacity-index .container .hero-content h1 {
     font-size: 10vw;
   }
-  .hero-image .bg-opacity-index .container .hero-content__logos h2 {
+  .hero-image .bg-opacity .bg-opacity-index .container .hero-content__logos h2 {
     font-size: 6vw;
   }
 }
@@ -397,6 +400,24 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   .hero-image .bg-opacity-index .container .hero-content__logos img {
     width: 9rem;
     max-width: none;
+  }
+}
+.accordion-contenido {
+  background-color: #caffc6;
+}
+
+#accordion-boton {
+  background-color: #b7ffbd;
+}
+
+@media screen and (max-width: 650px) {
+  .w-smf-100 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    margin: 0 2rem;
   }
 }
 #inicio {
