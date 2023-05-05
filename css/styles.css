@@ -402,6 +402,43 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
     max-width: none;
   }
 }
+.clientes .cliente-flex .carrousel-2, .clientes .cliente-flex .carrousel-1 {
+  height: clamp(230px, 25vw, 480px);
+  width: clamp(330px, 40vw, 700px);
+  border-radius: 10%;
+  box-shadow: 1px 1px 5px;
+  margin-bottom: 1rem;
+}
+
+.clientes {
+  background-color: #E9E9E9;
+  color: #000;
+}
+.clientes .cliente-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.clientes .cliente-flex video {
+  object-fit: cover;
+  height: clamp(230px, 25vw, 480px);
+  width: clamp(330px, 40vw, 700px);
+  border-radius: 10%;
+  box-shadow: 1px 1px 1px black;
+  margin-bottom: 1rem;
+}
+.clientes .cliente-flex .carrousel-1 {
+  animation: carrousel-1 6s ease-in-out 1s infinite alternate;
+}
+.clientes .cliente-flex .carrousel-2 {
+  animation: carrousel-2 6s ease-in-out 1s infinite alternate;
+}
+.clientes .clientes-logo {
+  width: clamp(7.5rem, 6rem + 10vw, 13rem);
+}
+
 .accordion-contenido {
   background-color: #caffc6;
 }
