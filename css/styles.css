@@ -389,10 +389,11 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   .hero-image .bg-opacity {
     height: calc(100vh - 4rem);
   }
-  .hero-image .bg-opacity .bg-opacity-index .container .hero-content h1 {
+  .hero-image .bg-opacity-index .container .hero-content .salon-h1 {
     font-size: 10vw;
   }
-  .hero-image .bg-opacity .bg-opacity-index .container .hero-content__logos h2 {
+  .hero-image .bg-opacity-index .container .hero-content__logos .grecia-logo h2,
+  .hero-image .bg-opacity-index .container .hero-content__logos .marina-logo h2 {
     font-size: 6vw;
   }
 }
@@ -535,6 +536,57 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   }
   #inicio .section-cards article {
     margin-bottom: 7rem;
+  }
+}
+.about-us {
+  color: black;
+  padding: 4rem;
+}
+.about-us .story-title {
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about-us .about-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: unset;
+  align-items: center;
+}
+.about-us .about-title .green {
+  color: #065000;
+  text-align: start;
+  align-self: start;
+}
+.about-us__card {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5%;
+  box-shadow: 2px 2px 10px gray;
+}
+.about-us__card--marina {
+  width: 320px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 5%;
+  box-shadow: 2px 2px 10px gray;
+}
+
+@media screen and (max-width: 850px) {
+  .title-black {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .w-sm-100 {
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
   }
 }
 
