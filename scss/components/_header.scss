@@ -139,9 +139,11 @@ header {
   header {
     .nav-menu {
       &-mobile {
-        .mobile-list {
-          height: 18rem;
-          bottom: 2.90rem;
+        .mobile-button {
+          .mobile-list {
+            height: 18rem;
+            bottom: 2.90rem;
+          }
         }
       }
     }

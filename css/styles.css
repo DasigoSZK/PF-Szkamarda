@@ -297,7 +297,7 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   }
 }
 @media screen and (max-width: 650px) {
-  header .nav-menu-mobile .mobile-list {
+  header .nav-menu-mobile .mobile-button .mobile-list {
     height: 18rem;
     bottom: 2.9rem;
   }
