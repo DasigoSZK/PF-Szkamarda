@@ -21,9 +21,7 @@
           text-align: center;
           margin-bottom: 1rem;
           height: 4rem;
-          display: flex;
-          align-items: end;
-          justify-content: center;
+          @include flex(row, center, end);
         }
       }
 
@@ -33,8 +31,7 @@
         width: clamp(200px, 20vw, 210px);
         height: clamp(200px, 20vw, 210px);
         border-radius: 10%;
-        display: flex;
-        justify-content: center;
+        @include flex(row, center, unset);
 
         &-card {
           text-align: center;
@@ -52,6 +49,15 @@
           cursor: pointer;
           clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
           transition: clip-path 0.3s ease-in-out;
+
+          >p {
+            text-align: center;
+            width: clamp(200px, 20vw, 210px);
+            height: clamp(200px, 20vw, 210px);
+            font-size: 8.5px;
+            @include flex(row, center, center);
+            margin: 0;
+          }
         }
 
         &-img {
@@ -80,16 +86,6 @@
 
       }
 
-      >p {
-        text-align: center;
-        width: clamp(200px, 20vw, 210px);
-        height: clamp(200px, 20vw, 210px);
-        font-size: 8.5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-      }
 
     }
   }

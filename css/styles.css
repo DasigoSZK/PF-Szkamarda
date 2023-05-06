@@ -561,8 +561,10 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   margin-bottom: 1rem;
   height: 4rem;
   display: flex;
-  align-items: end;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: end;
 }
 .services .container-services .services-box .services-price {
   position: relative;
@@ -571,7 +573,10 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   height: clamp(200px, 20vw, 210px);
   border-radius: 10%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: unset;
 }
 .services .container-services .services-box .services-price-card {
   text-align: center;
@@ -590,6 +595,18 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   transition: clip-path 0.3s ease-in-out;
 }
+.services .container-services .services-box .services-price-card > p {
+  text-align: center;
+  width: clamp(200px, 20vw, 210px);
+  height: clamp(200px, 20vw, 210px);
+  font-size: 8.5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
 .services .container-services .services-box .services-price-img {
   width: 100%;
   height: 100%;
@@ -607,16 +624,6 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   opacity: 1;
   pointer-events: auto;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-.services .container-services .services-box > p {
-  text-align: center;
-  width: clamp(200px, 20vw, 210px);
-  height: clamp(200px, 20vw, 210px);
-  font-size: 8.5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
 }
 
 @media screen and (max-width: 850px) {
