@@ -538,6 +538,96 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
     margin-bottom: 7rem;
   }
 }
+.services {
+  background-image: url(../assets/desktop-banner-ps2.jpg);
+  width: 100vw;
+  background-size: contain;
+  background-position: left;
+  background-repeat: repeat-y;
+}
+.services .container-services .services-box {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin: 5vw 5vw 0 5vw;
+}
+.services .container-services .services-box .subtitle-container {
+  width: clamp(200px, 20vw, 210px);
+}
+.services .container-services .services-box .subtitle-container .services-subtitle {
+  border-bottom: thin solid #fff;
+  max-width: 200px;
+  font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
+  text-align: center;
+  margin-bottom: 1rem;
+  height: 4rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.services .container-services .services-box .services-price {
+  position: relative;
+  overflow: hidden;
+  width: clamp(200px, 20vw, 210px);
+  height: clamp(200px, 20vw, 210px);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+}
+.services .container-services .services-box .services-price-card {
+  text-align: center;
+  width: clamp(200px, 20vw, 210px);
+  height: clamp(200px, 20vw, 210px);
+  font-size: clamp(8px, 0.8vw, 12px);
+  overflow: hidden;
+  background-color: rgba(80, 80, 80, 0.5490196078);
+  border-radius: 10%;
+  padding: 1px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 0.3s ease-in-out;
+}
+.services .container-services .services-box .services-price-img {
+  width: 100%;
+  height: 100%;
+  max-width: 13rem;
+  max-height: 13rem;
+  cursor: pointer;
+}
+.services .container-services .services-box .services-price-img img {
+  object-fit: cover;
+  border-radius: 10%;
+  height: inherit;
+  width: inherit;
+}
+.services .container-services .services-box .services-price-img:focus + div {
+  opacity: 1;
+  pointer-events: auto;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.services .container-services .services-box > p {
+  text-align: center;
+  width: clamp(200px, 20vw, 210px);
+  height: clamp(200px, 20vw, 210px);
+  font-size: 8.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .services {
+    background-image: url(../assets/mobile-background.jpg);
+    width: 100vw;
+    background-size: contain;
+    background-position: left;
+    background-repeat: repeat-y;
+  }
+}
 .about-us {
   color: black;
   padding: 4rem;
