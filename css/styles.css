@@ -163,11 +163,17 @@ footer {
   background-attachment: fixed;
   padding: 2rem;
 }
-footer p {
+footer article .redes__icon {
+  width: 80px;
+}
+footer article p {
   margin: 0 0;
 }
-footer h3 {
+footer article h3 {
   margin: 1rem 0;
+}
+footer a img {
+  width: 100px;
 }
 
 header {
