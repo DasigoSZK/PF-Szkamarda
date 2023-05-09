@@ -1,0 +1,117 @@
+// Animaciones
+
+@keyframes carrousel-1 {
+  from {
+    background-image: url(../assets/clientes-4.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  to {
+    background-image: url(../assets/clientes-4b.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@keyframes carrousel-2 {
+  from {
+    background-image: url(../assets/clientes-5.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  to {
+    background-image: url(../assets/clientes-5b.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+// Utilities generales
+
+.active {
+  color: #065000
+}
+
+.bg-gray {
+  background-color: #e4e4e4;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+  width: 80%;
+}
+
+.container-about-us {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 80%;
+
+}
+
+.container-services {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 60vw;
+  padding-top: 4rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.none {
+  display: none;
+}
+
+.box {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.box-black {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.title {
+  font-family: $font;
+  text-align: center;
+  font-size: $step-5;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  max-width: 500px;
+}
+
+.title-black {
+  font-family: $font;
+  font-size: $step-5;
+  border-bottom: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+
+
+// Mixins
+
+@mixin flex($direction, $jc, $ai) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: nowrap;
+  justify-content: $jc;
+  align-items: $ai
+}

@@ -1,0 +1,41 @@
+footer {
+  background-image: url(../assets/hero-background-desktop.jpg);
+  background-attachment: fixed;
+  padding: 2rem;
+
+  article {
+    .redes {
+      &__icon {
+        width: 80px;
+      }
+    }
+
+    p {
+      margin: 0 0;
+    }
+
+    h3 {
+      margin: 1rem 0;
+    }
+  }
+
+  a {
+    img {
+      width: 100px;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 850px) {
+  footer {
+    a {
+      margin-bottom: 2rem;
+
+      img {
+        width: 90px;
+      }
+    }
+  }
+}

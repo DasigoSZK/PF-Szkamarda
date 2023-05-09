@@ -1,0 +1,142 @@
+.hero-image {
+  background-image: url(../assets/hero-background-desktop.jpg);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+
+  &--cut {
+    height: 30vh;
+    @include flex(column, center, center);
+  }
+
+  .bg-opacity {
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 30vh;
+
+    article {
+      height: inherit;
+    }
+  }
+
+  .bg-opacity-index {
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100vh;
+
+    .container {
+      .hero-content {
+        height: 100vh;
+        @include flex(column, center, center);
+
+        h1 {
+          text-align: center;
+          font-size: 4rem;
+        }
+
+        img {
+          width: 20rem;
+          border-radius: 50%;
+        }
+
+        .salon-h1 {
+          width: 100vw;
+        }
+
+        &__logos {
+          @include flex(row, space-evenly, unset);
+          text-align: center;
+          gap: 15vw;
+          padding-left: 1rem;
+          padding-right: 1rem;
+
+          h2 {
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 0.5rem;
+          }
+
+          .grecia-logo {
+            max-width: 40%;
+            @include flex(column, center, unset);
+
+            .logo-img {
+              img {
+                transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+              }
+
+              &:hover {
+                >img {
+                  transform: scale(1.1);
+                  border: 2px solid white;
+                }
+              }
+
+              &:active {
+                >img {
+                  transform: scale(0.7);
+                }
+              }
+            }
+
+          }
+
+          .marina-logo {
+            @extend .grecia-logo;
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero-image {
+    height: calc(100vh - 4rem);
+
+    .bg-opacity {
+      height: calc(100vh - 4rem);
+
+
+    }
+
+    .bg-opacity-index {
+      .container {
+        .hero-content {
+          .salon-h1 {
+            font-size: 10vw;
+          }
+
+          &__logos {
+
+            .grecia-logo,
+            .marina-logo {
+              h2 {
+                font-size: 6vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero-image {
+    .bg-opacity-index {
+      .container {
+        .hero-content {
+          &__logos {
+            img {
+              width: 9rem;
+              max-width: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

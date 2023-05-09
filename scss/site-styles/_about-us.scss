@@ -1,0 +1,56 @@
+.about-us {
+  color: black;
+  padding: 4rem;
+
+  .story-title {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .about-title {
+    @include flex(column, unset, center);
+
+    .green {
+      color: #065000;
+      text-align: start;
+      align-self: start
+    }
+  }
+
+  &__card {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 2px 2px 10px gray;
+    ;
+  }
+
+  &__card--marina {
+    width: 320px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 2px 2px 10px gray;
+    ;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  .title-black {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .w-sm-100 {
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+  }
+}
