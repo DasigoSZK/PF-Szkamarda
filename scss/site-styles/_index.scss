@@ -30,6 +30,22 @@
       height: 100vh;
       padding-top: 3rem;
 
+      .card-picture {
+        border-radius: 10%;
+        box-shadow: 1px 1px 1px black;
+        width: 27rem;
+        height: 50rem;
+        margin-right: 1rem;
+      }
+
+      .card-picture--small {
+        border-radius: 10%;
+        box-shadow: 1px 1px 1px black;
+        width: 21rem;
+        height: 21rem;
+        display: none;
+      }
+
       .large-picture {
         >* {
           border-radius: 10%;
@@ -48,7 +64,6 @@
 @media screen and (min-width: 1200px) {
   #inicio {
     .section-cards {
-
       .container-index {
         margin-left: auto;
         margin-right: auto;
@@ -63,48 +78,69 @@
     .section-cards {
       background-image: none;
       background-color: #334239;
+
+      .card-grecia,
+      .card-marina {
+        .card-picture {
+          display: none;
+        }
+
+        .card-picture--small {
+          @include flex (row, center, center)
+        }
+      }
+
     }
 
   }
+}
 
-  @media screen and (max-width: 850px) {
-    #inicio {
-      .section-cards {
-        height: 200vh;
+@media screen and (max-width: 850px) {
+  #inicio {
+    .section-cards {
+      height: 200vh;
 
-        #grecia,
-        #marina {
-          scroll-margin: 0;
-        }
+      #grecia,
+      #marina {
+        scroll-margin: 0;
+      }
 
-        article {
-          margin-bottom: 0;
-        }
+      article {
+        margin-bottom: 0;
+      }
 
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #inicio {
+    .section-cards {
+      height: 200vh;
+
+      article {
+        margin-bottom: 0;
       }
     }
   }
+}
 
-  @media screen and (max-width: 650px) {
-    #inicio {
-      .section-cards {
-        height: 200vh;
+@media screen and (max-width: 376px) {
+  #inicio {
+    .section-cards {
+      height: 240vh;
 
-        article {
-          margin-bottom: 0;
+      .card-grecia,
+      .card-marina {
+        .card-picture--small {
+          width: 15rem;
+          height: 15rem;
+          margin-bottom: 1rem;
         }
       }
-    }
-  }
 
-  @media screen and (max-width: 376px) {
-    #inicio {
-      .section-cards {
-        height: 240vh;
-
-        article {
-          margin-bottom: 7rem;
-        }
+      article {
+        margin-bottom: 7rem;
       }
     }
   }
