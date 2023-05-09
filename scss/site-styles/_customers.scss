@@ -1,0 +1,41 @@
+%carrousel-container {
+  height: clamp(230px, 25vw, 480px);
+  width: clamp(330px, 40vw, 700px);
+  border-radius: 10%;
+  box-shadow: 1px 1px 5px;
+  margin-bottom: 1rem;
+}
+
+.clientes {
+  background-color: #E9E9E9;
+  color: $text-color-black;
+
+  .cliente-flex {
+    @include flex(column, center, center);
+
+    video {
+      object-fit: cover;
+      height: clamp(230px, 25vw, 480px);
+      width: clamp(330px, 40vw, 700px);
+      border-radius: 10%;
+      box-shadow: 1px 1px 1px black;
+      margin-bottom: 1rem;
+    }
+
+    .carrousel-1 {
+      @extend %carrousel-container;
+      animation: carrousel-1 6s ease-in-out 1s infinite alternate;
+    }
+
+    .carrousel-2 {
+      @extend %carrousel-container;
+      animation: carrousel-2 6s ease-in-out 1s infinite alternate;
+    }
+
+  }
+
+  .clientes-logo {
+    width: $step-11;
+  }
+
+}

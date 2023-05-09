@@ -1,0 +1,19 @@
+.accordion-contenido {
+  background-color: #caffc6;
+}
+
+#accordion-boton {
+  background-color: #b7ffbd
+}
+
+@media screen and (max-width: 650px) {
+  .w-smf-100 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title {
+    margin: 0 2rem;
+  }
+}
