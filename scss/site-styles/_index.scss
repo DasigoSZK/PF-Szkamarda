@@ -12,12 +12,12 @@
     h3 {
       border-top: 1px solid white;
       border-bottom: 1px solid white;
-      font-size: $step-3;
+      font-size: map-get($fuentes, step-3);
     }
 
     p {
       margin-bottom: 0;
-      font-size: $step-2;
+      font-size: map-get($fuentes, step-2);
     }
 
     #grecia,
@@ -61,6 +61,20 @@
   }
 }
 
+@media screen and (min-width:1200px) and (max-height: 800px) {
+  #inicio {
+    .section-cards {
+      height: 230vh;
+
+      .card-grecia,
+      .card-marina {
+        height: 110vh;
+      }
+    }
+  }
+}
+
+
 @media screen and (min-width: 1200px) {
   #inicio {
     .section-cards {
@@ -78,16 +92,22 @@
     .section-cards {
       background-image: none;
       background-color: #334239;
+      height: 220vh;
 
       .card-grecia,
       .card-marina {
+        height: 100vh;
+
         .card-picture {
           display: none;
         }
 
         .card-picture--small {
-          @include flex (row, center, center)
+          display: block;
+          margin-bottom: 1rem;
         }
+
+
       }
 
     }
@@ -98,11 +118,18 @@
 @media screen and (max-width: 850px) {
   #inicio {
     .section-cards {
-      height: 200vh;
+      height: 220vh;
 
-      #grecia,
-      #marina {
+      .card-grecia,
+      .card-marina {
+        height: 110vh;
         scroll-margin: 0;
+        margin-bottom: 2rem;
+
+        .card-picture--small {
+          width: 18rem;
+          height: 18rem;
+        }
       }
 
       article {
@@ -113,10 +140,28 @@
   }
 }
 
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  #inicio {
+    .section-cards {
+      height: 500vh;
+
+      .card-grecia,
+      .card-marina {
+        height: 240vh;
+
+        .card-picture--small {
+          width: 18rem;
+          height: 18rem;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 650px) {
   #inicio {
     .section-cards {
-      height: 200vh;
+      height: 220vh;
 
       article {
         margin-bottom: 0;
@@ -128,7 +173,7 @@
 @media screen and (max-width: 376px) {
   #inicio {
     .section-cards {
-      height: 240vh;
+      height: 250vh;
 
       .card-grecia,
       .card-marina {

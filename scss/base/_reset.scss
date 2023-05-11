@@ -11,18 +11,19 @@ html {
   box-sizing: inherit;
 }
 
-body{
+body {
   margin: 0;
   overflow-x: hidden;
-  color: $text-color;
+  color: map-get($colores, text-color);
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
 
-a{
-  color: $text-color;
+a {
+  color: map-get($colores, text-color);
   text-decoration: none;
 }
 
@@ -62,6 +63,6 @@ img {
   height: auto;
 }
 
-p{
+p {
   line-height: 1.6;
 }

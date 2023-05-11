@@ -92,7 +92,7 @@
 .title {
   font-family: $font;
   text-align: center;
-  font-size: $step-5;
+  font-size: map-get($fuentes, step-5);
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   max-width: 500px;
@@ -100,7 +100,7 @@
 
 .title-black {
   font-family: $font;
-  font-size: $step-5;
+  font-size: map-get($fuentes, step-5);
   border-bottom: 1px solid black;
   padding: 0.5rem 1rem;
 }
