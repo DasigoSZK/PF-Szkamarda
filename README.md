@@ -10,7 +10,8 @@ Al mismo tiempo, es mi primer proyecto para el curso de Desarrollo WEB de **Code
 En este proyecto se utilizó:
 - HTML
 - CSS
-- Bootstrap
+  - SASS
+  - Bootstrap
 
 Link a redes sociales del emprendimiento _Salón de Belleza M&G_
 
