@@ -311,6 +311,11 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
     display: block;
   }
 }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  header .nav-menu .nav-menu-mobile .mobile-list {
+    height: 80vh;
+  }
+}
 @media screen and (max-width: 650px) {
   header .nav-menu-mobile .mobile-button .mobile-list {
     height: 18rem;
