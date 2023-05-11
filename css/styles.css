@@ -159,32 +159,52 @@ p {
   line-height: 1.6;
 }
 
-footer {
-  background-image: url(../assets/hero-background-desktop.jpg);
-  background-attachment: fixed;
-  padding: 2rem;
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
-footer article .redes__icon {
-  width: 80px;
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
-footer article p {
-  margin: 0 0;
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
-footer article h3 {
-  margin: 1rem 0;
-}
-footer a img {
-  width: 100px;
+.animate__animated {
+  animation-duration: 1s;
 }
 
-@media screen and (max-width: 850px) {
-  footer a {
-    margin-bottom: 2rem;
-  }
-  footer a img {
-    width: 90px;
-  }
+.animate__fadeInDown {
+  animation-name: fadeInDown;
 }
+
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+
 header {
   background-color: #74af70;
   height: 4rem;
@@ -320,6 +340,32 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   header .nav-menu-mobile .mobile-button .mobile-list {
     height: 18rem;
     bottom: 2.9rem;
+  }
+}
+footer {
+  background-image: url(../assets/hero-background-desktop.jpg);
+  background-attachment: fixed;
+  padding: 2rem;
+}
+footer article .redes__icon {
+  width: 80px;
+}
+footer article p {
+  margin: 0 0;
+}
+footer article h3 {
+  margin: 1rem 0;
+}
+footer a img {
+  width: 100px;
+}
+
+@media screen and (max-width: 850px) {
+  footer a {
+    margin-bottom: 2rem;
+  }
+  footer a img {
+    width: 90px;
   }
 }
 .hero-image {
