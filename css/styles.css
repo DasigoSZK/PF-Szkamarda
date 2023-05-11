@@ -110,7 +110,8 @@ body {
   color: #fff;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
 

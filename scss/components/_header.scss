@@ -1,5 +1,5 @@
 header {
-  background-color: $header-color;
+  background-color: map-get($colores, header-color);
   height: 4rem;
   position: sticky;
   top: 0;
@@ -83,7 +83,7 @@ header {
           left: 0;
           padding: 0;
           gap: 2rem;
-          background-color: $mobile-bar-color-2;
+          background-color: map-get($colores, mobile-bar-color-2);
           border-radius: 20% 20% 0 0;
           height: 28vh;
           width: 100%;
