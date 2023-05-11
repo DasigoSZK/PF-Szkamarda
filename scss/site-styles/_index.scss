@@ -120,15 +120,40 @@
     .section-cards {
       height: 220vh;
 
-      #grecia,
-      #marina {
+      .card-grecia,
+      .card-marina {
+        height: 110vh;
         scroll-margin: 0;
+        margin-bottom: 2rem;
+
+        .card-picture--small {
+          width: 18rem;
+          height: 18rem;
+        }
       }
 
       article {
         margin-bottom: 0;
       }
 
+    }
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  #inicio {
+    .section-cards {
+      height: 500vh;
+
+      .card-grecia,
+      .card-marina {
+        height: 240vh;
+
+        .card-picture--small {
+          width: 18rem;
+          height: 18rem;
+        }
+      }
     }
   }
 }
