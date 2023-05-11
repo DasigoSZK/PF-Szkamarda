@@ -92,6 +92,8 @@
   }
 }
 
+
+
 @media screen and (max-width: 850px) {
   .hero-image {
     height: calc(100vh - 4rem);
@@ -115,6 +117,37 @@
             .marina-logo {
               h2 {
                 font-size: 6vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .hero-image {
+    .bg-opacity-index {
+      .container {
+        .hero-content {
+          .salon-h1 {
+            font-size: 2rem;
+          }
+
+          &__logos {
+
+            .grecia-logo,
+            .marina-logo {
+              h2 {
+                font-size: 1.5rem;
+              }
+
+              .logo-img {
+                img {
+                  width: 8rem;
+                }
+
               }
             }
           }

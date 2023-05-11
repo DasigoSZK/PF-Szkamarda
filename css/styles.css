@@ -412,6 +412,19 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
     font-size: 6vw;
   }
 }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .hero-image .bg-opacity-index .container .hero-content .salon-h1 {
+    font-size: 2rem;
+  }
+  .hero-image .bg-opacity-index .container .hero-content__logos .grecia-logo h2,
+  .hero-image .bg-opacity-index .container .hero-content__logos .marina-logo h2 {
+    font-size: 1.5rem;
+  }
+  .hero-image .bg-opacity-index .container .hero-content__logos .grecia-logo .logo-img img,
+  .hero-image .bg-opacity-index .container .hero-content__logos .marina-logo .logo-img img {
+    width: 8rem;
+  }
+}
 @media screen and (max-width: 650px) {
   .hero-image .bg-opacity-index .container .hero-content__logos img {
     width: 9rem;
@@ -528,6 +541,15 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   min-width: 350px;
 }
 
+@media screen and (min-width: 1200px) and (max-height: 800px) {
+  #inicio .section-cards {
+    height: 230vh;
+  }
+  #inicio .section-cards .card-grecia,
+  #inicio .section-cards .card-marina {
+    height: 110vh;
+  }
+}
 @media screen and (min-width: 1200px) {
   #inicio .section-cards .container-index {
     margin-left: auto;
@@ -539,6 +561,11 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   #inicio .section-cards {
     background-image: none;
     background-color: #334239;
+    height: 220vh;
+  }
+  #inicio .section-cards .card-grecia,
+  #inicio .section-cards .card-marina {
+    height: 100vh;
   }
   #inicio .section-cards .card-grecia .card-picture,
   #inicio .section-cards .card-marina .card-picture {
@@ -546,16 +573,13 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
   }
   #inicio .section-cards .card-grecia .card-picture--small,
   #inicio .section-cards .card-marina .card-picture--small {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 850px) {
   #inicio .section-cards {
-    height: 200vh;
+    height: 220vh;
   }
   #inicio .section-cards #grecia,
   #inicio .section-cards #marina {
@@ -567,7 +591,7 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
 }
 @media screen and (max-width: 650px) {
   #inicio .section-cards {
-    height: 200vh;
+    height: 220vh;
   }
   #inicio .section-cards article {
     margin-bottom: 0;
@@ -575,7 +599,7 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
 }
 @media screen and (max-width: 376px) {
   #inicio .section-cards {
-    height: 240vh;
+    height: 250vh;
   }
   #inicio .section-cards .card-grecia .card-picture--small,
   #inicio .section-cards .card-marina .card-picture--small {
