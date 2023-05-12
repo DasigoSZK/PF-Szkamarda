@@ -54,10 +54,12 @@ header {
 @media screen and (max-width: 850px) {
   header {
     position: fixed;
-    top: auto;
+    top: 92.5vh;
     bottom: 0px;
     left: 0;
+    right: 0;
     overflow: hidden;
+    width: 100vw;
 
     .nav-menu {
       .nav-menu__logo {
