@@ -30,6 +30,17 @@
 
 // Utilities generales
 
+.overflow-0 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 10%;
+}
+
+.overflow-hiden {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .active {
   color: #065000
 }

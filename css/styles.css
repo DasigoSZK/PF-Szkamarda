@@ -22,6 +22,17 @@
     background-position: center center;
   }
 }
+.overflow-0 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 10%;
+}
+
+.overflow-hiden {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .active {
   color: #065000;
 }
@@ -262,10 +273,12 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
 @media screen and (max-width: 850px) {
   header {
     position: fixed;
-    top: auto;
+    top: 90.5%;
     bottom: 0px;
     left: 0;
+    right: 0;
     overflow: hidden;
+    width: 100vw;
   }
   header .nav-menu .nav-menu__logo {
     display: none;
