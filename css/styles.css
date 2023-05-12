@@ -277,7 +277,9 @@ header .nav-menu .nav-menu__logo .home-desk:hover {
     bottom: 0px;
     left: 0;
     right: 0;
+    right: 0;
     overflow: hidden;
+    width: 100vw;
     width: 100vw;
   }
   header .nav-menu .nav-menu__logo {
