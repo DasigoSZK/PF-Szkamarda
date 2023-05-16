@@ -102,6 +102,11 @@
   padding: 0.5rem 1rem;
 }
 
+.white {
+  color: white;
+  fill: white;
+}
+
 html {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -358,8 +363,49 @@ footer {
   background-attachment: fixed;
   padding: 2rem;
 }
+footer article .redes .titulo-modal {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+footer article .redes .titulo-modal img {
+  width: 50px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+footer article .redes .modal-close {
+  width: 50px;
+}
+footer article .redes .modal-form > * {
+  color: black;
+  display: block;
+}
+footer article .redes .modal-form label {
+  color: #004d00;
+}
+footer article .redes .modal-form input {
+  margin-bottom: 0.6rem;
+}
+footer article .redes .modal-edge {
+  background-image: url(../assets/hero-background-desktop.jpg);
+}
+footer article .redes .modal-edge button {
+  align-self: flex-end;
+}
+footer article .redes .modal-button {
+  background-color: #467742;
+  color: white;
+  margin-top: 1rem;
+}
 footer article .redes__icon {
   width: 80px;
+}
+footer article .redes__icon--big {
+  width: 90px;
 }
 footer article p {
   margin: 0 0;
@@ -367,11 +413,20 @@ footer article p {
 footer article h3 {
   margin: 1rem 0;
 }
-footer a img {
-  width: 100px;
-}
 
 @media screen and (max-width: 850px) {
+  footer article .redes .titulo-modal img {
+    margin-right: 0.3rem;
+  }
+  footer article .redes .titulo-modal .moda-title {
+    margin-left: 0;
+  }
+  footer article .redes .modal-form input {
+    width: 90%;
+  }
+  footer article .redes .modal-form textarea {
+    width: 90%;
+  }
   footer a {
     margin-bottom: 2rem;
   }

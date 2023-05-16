@@ -5,8 +5,61 @@ footer {
 
   article {
     .redes {
+      .titulo-modal {
+        color: white;
+        text-align: center;
+        @include flex(row, center, center);
+
+        img {
+          width: 50px;
+          margin-right: 0.5rem;
+          border-radius: 50%;
+          // border: 1px solid white;
+        }
+      }
+
+      .modal-close {
+        width: 50px;
+      }
+
+      .modal-form {
+
+        >* {
+          color: black;
+          display: block;
+        }
+
+        label {
+          color: darken(green, 10%);
+        }
+
+        input {
+          margin-bottom: 0.6rem;
+        }
+      }
+
+      .modal-edge {
+        background-image: url(../assets/hero-background-desktop.jpg);
+
+        button {
+          align-self: flex-end;
+        }
+      }
+
+      .modal-button {
+        background-color: darken(map-get($colores, header-color), 20%);
+        color: white;
+        margin-top: 1rem;
+      }
+
       &__icon {
         width: 80px;
+
+        &--big {
+          width: 90px;
+        }
+
+        ;
       }
     }
 
@@ -19,17 +72,35 @@ footer {
     }
   }
 
-  a {
-    img {
-      width: 100px;
-    }
-  }
-
 
 }
 
 @media screen and (max-width: 850px) {
   footer {
+    article {
+      .redes {
+        .titulo-modal {
+          img {
+            margin-right: 0.3rem;
+          }
+
+          .moda-title {
+            margin-left: 0;
+          }
+        }
+
+        .modal-form {
+          input {
+            width: 90%;
+          }
+
+          textarea {
+            width: 90%;
+          }
+        }
+      }
+    }
+
     a {
       margin-bottom: 2rem;
 

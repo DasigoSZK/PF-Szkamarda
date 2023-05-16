@@ -124,6 +124,37 @@
             class="redes__icon" src="./assets/wpp-icon-white.png" alt="link a whatsapp del salón de belleza"></a>
         <a target="_blank" href="https://www.instagram.com/salon.de.belleza.mg/"><img class="redes__icon"
             src="./assets/ig-icon-white.png" alt="link a página de instagram"></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="redes__icon--big"
+            src="./assets/mail-icon-white.png" alt="abrir formulario de contacto"></a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="d-flex justify-content-center modal-edge modal-header">
+                <div class="titulo-modal">
+                  <img src="./assets/salon-logo.png" alt="Logo de salón de belleza MG">
+                  <h2 class="modal-title fs-5" id="exampleModalLabel">Salón de Belleza M&G</h2>
+                </div>
+              </div>
+              <div class="modal-body">
+                <form class="modal-form" action="https://formsubmit.co/greis.ara@hotmail.com" method="post">
+                  <label for="nombre">Nombre y apellido</label>
+                  <input pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required placeholder="Nombre y apellido" id="nombre"
+                    type="text" name="nombre">
+                  <label for="correo">Email</label>
+                  <input pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" required placeholder="nombre@hotmail.com"
+                    id="email" type="email" name="correo">
+                  <label for="comentarios">Comentarios</label>
+                  <textarea id="comentarios" placeholder="Agrega tus comentarios" style="resize: none;" required
+                    name="comentarios" id="comentarios" cols="50" rows="5"></textarea>
+                  <button type="submit" class="btn modal-button">Enviar</button>
+                </form>
+              </div>
+              <div class="modal-edge modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </article>
 
