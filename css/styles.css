@@ -603,6 +603,10 @@ footer article h3 {
     margin: 0 2rem;
   }
 }
+.accordion-button:focus {
+  box-shadow: none;
+}
+
 #inicio {
   scroll-margin: 13rem;
 }
@@ -844,6 +848,10 @@ footer article h3 {
     background-size: contain;
     background-position: left;
     background-repeat: repeat-y;
+  }
+  .services .container-services {
+    width: 92vw;
+    padding-top: 4rem;
   }
 }
 .about-us {
